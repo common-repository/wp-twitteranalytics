@@ -1,0 +1,265 @@
+* {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+a:active
+{
+outline: none;
+}
+
+a:focus
+{
+-moz-outline-style: none;
+}
+
+.pause{
+position:absolute;
+display:none;
+top:0px;
+left:0px;
+width:100%;
+height:100%;
+min-height:458px;
+z-index:999;
+background-color:lightgray;
+font-align:center;
+filter: alpha(opacity=40); /* internet explorer */
+-khtml-opacity: 0.6;/* khtml, old safari */
+-moz-opacity: 0.6;/* mozilla, netscape */
+opacity: 0.6;/* fx, safari, opera */
+}
+.pause-msg{
+position:absolute;
+top:120px;
+left:117px;
+z-index:9999;
+width:auto;
+height:auto;
+
+font-size:30px;
+color:black;
+
+}
+#tweetContent{
+position:relative;
+
+
+}
+div #panel2{
+overflow:hidden;
+
+}
+div.panel {
+	background-color: #FFFFFF;
+	width: 350px;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid #CCCCCC;
+	background-repeat:no-repeat;
+	background-position:center;
+	overflow: auto;
+}
+div.panel h1.panelheading {
+	font-weight: bold;
+	color: #444;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background:url(../images/hbg.jpg) #999999;
+	background-repeat:repeat-x;
+	height:20px;
+	cursor:pointer;
+}
+input.searchinput {
+	font-size: 12px;
+	padding: 4px;
+	width: 250px;
+	border: 1px solid #999999;
+	background-color: #EEEEEE;
+}
+.searchbtn {
+	background-image: url(../images/hbg.jpg);
+	padding: 5px;
+	color: #FFFFFF;
+	font-size: 12px;
+	border: 1px solid #666666;
+}.searchbtn:hover{cursor:pointer}
+div.panel h1.panelheading span.box-icon {
+	background-color:#FFFFFF;
+	float:right;
+	margin-right:10px;
+	margin-top:0px;
+	width:14px;
+	color:#000000;
+	text-align:center;
+	cursor:pointer;
+
+}
+
+
+div.panel h1.panelheading span.htext {
+	float:left;
+	display:inline-block;
+	font-weight:bold;
+}
+
+
+
+div.panel div.panelcontent {
+	margin: 4px;
+	min-height:430px;
+
+}
+div.panel div.panelfooter {
+	text-align: center;
+	width: 350px;
+	padding-bottom: 10px;
+}
+.column {
+	width: 360px;
+	padding-bottom: 20px;
+	margin:0 auto;
+}
+div#wrapper {
+	height: 500px;
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 0px solid #666666;
+	padding: 15px;
+	background-color: #000000;
+}
+
+a.ico_record {
+	background-image: url(../images/control-record.png);
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: left;
+}a.ico_record:hover{background-image: url(../images/control-record-active.png);}
+a.ico_play {
+	background-image: url(../images/control-play-active.png);
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: right;
+	
+}a.ico_play:hover{background-image: url(../images/control-play-active.png);}
+a.ico_pause {
+	background-image: url(../images/control-pause.png);
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: right;
+	
+}a.ico_pause:hover{background-image: url(../images/control-pause-active.png);}
+a.ico_delete{
+	background-image: url(../images/control-delete.png);
+	display: block;
+	height: 16px;
+	width: 16px;
+	float: right;
+	
+}a.ico_delete:hover{background-image: url(../images/control-delete-active.png);}
+
+span.mct {
+	float:left;
+    font-weight:bold;
+}
+
+div.panel h2 {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	color: #006633;
+}
+
+div.panel ul {
+	list-style-type: none;
+}
+div.panel ul li {
+	margin-top:5px;
+	display:block;
+	float:left;
+	
+	clear:both;
+	min-width:280px;
+	-moz-border-radius: 5px;
+border-radius: 5px;
+  
+}div.panel ul li:hover{
+background-color:#f0efef;
+cursor:pointer;
+border-bottom:1px black solid;
+margin-bottom:-1px;
+}
+div.panel ul li.current{
+background-color:lightgray;
+border-bottom:1px black solid;
+margin-bottom:-1px;
+cursor:auto;
+color:white;
+}
+
+div.panelcontent ul li a {
+	color:#0099FF;
+}
+
+.twitStream{
+	font-family: verdana;
+	font-size: 11px;
+}
+.twitStream a{
+	font-family: verdana;
+	font-size: 11px;
+}
+.tweet{
+	display: block;
+	padding: .4em;
+	margin: .4em 0;
+}
+.tweet-left{
+	float: left;
+	margin-right: 1em;
+}
+.tweet-left img{
+	border: 2px solid #000000;
+	
+}
+.tweet p.text{
+	margin: 0;
+	padding: 0;
+}
+#tw{
+float:left;
+font-weight:bold;
+margin-top:10px;
+}
+#tweets{
+float:left;
+}
+
+/*------------------------------DELETE CONTROL--------------------*/
+
+#reload_query_list{margin-right:5px; height:16px; width:16px; padding:5px; border:1px solid transparent;cursor:pointer;}
+#reload_query_list:hover{ border: 1px solid #ccc; border-left-color:#ffffff;}
+.qReload {
+	background: url(../images/load.png) no-repeat center;
+}
+
+.qReload.loading {
+	background: url(../images/load.gif) no-repeat center;
+}
+.btnseparator{
+	height: 22px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #fff;
+	margin: 1px;
+	margin-right:5px;
+	}
